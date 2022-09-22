@@ -1,5 +1,68 @@
+# Real-Estate-Web-App
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- Search
+- view results
+- Navigate to another page
+
+### Screenshot
+
+![](assets/screenshot.png)
+![](public/screenshot1.png)
+
+### Links
+
+- Solution URL: (https://github.com/faozziyyah/real-estate)
+- Live Site URL: (https://real-estate-app-faozziyyah.vercel.app/)
+
+## My process
+
+### Built with
+
+- CSS
+- [NextJs](https://nextjs.org/) - ReactJS Framework
+- [Chakra UI](https://chakra-ui.com/) - Chakra UI
+- [Rapid API](https://rapidapi.com/hub?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel) - Rapid API
+
+### What I learned
+
+- How to use Chakra UI and Rapid APIin NextJs
+
+```Next.js
+const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, linkName, imageUrl }) => (
+  <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
+    <Image src={imageUrl} width={500} height={300} alt="banner" />
+    <Box p="5">
+      <Text color="gray.500" fontSize="sm" fontWeight="medium">{purpose}</Text>
+      <Text fontSize="3xl" fontWeight="bold">{title1} <br /> {title2} </Text>
+      <Text fontSize="lg" paddingTop="3" paddingBottom="3" color="gray.700">{desc1} <br /> {desc2}</Text>
+      <Button fontSize="xl">
+        <Link href={linkName}>{buttonText}</Link>
+      </Button>
+    </Box>
+  </Flex>
+)
+```
+
+### Useful resources
 ## Getting Started
 
 First, run the development server:
